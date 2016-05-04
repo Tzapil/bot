@@ -81,7 +81,7 @@
   (POST "/hook" req
        (println "HOOK_MSG") "HELLO BRO") ;; (hook-message req)
   (ANY "*" []
-       (route/not-found (slurp (io/resource "404.html")))))
+       (route/not-found "404.html")))
 
 (defn -main [& [port]]
   (let [port (Integer. (or port (env :port) 80))]
