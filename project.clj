@@ -10,6 +10,7 @@
                  [environ "1.0.0"]
 				 [clj-http "2.1.0"]
 				 [enlive "1.1.6"]]
+  :ring { :ssl? true :ssl-port 443 :keystore "~/server.jks" :key-password "rtyuehedj,kfrf[" }
   ;:min-lein-version "2.0.0"
   ;:plugins [[environ/environ.lein "0.3.1"]]
   ;:hooks [environ.leiningen.hooks]
