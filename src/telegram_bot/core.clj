@@ -84,7 +84,7 @@
        (route/not-found "404.html")))
 
 (defn -main [& [port]]
-  (let [port (Integer. (or port (env :port) 80))]
+  (let [port (Integer. (or port (env :port) 5000))]
 	(println (str "Running on port:" port))
 	(init)
     (jetty/run-jetty (site #'app) {:port port :join? false})))
