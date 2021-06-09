@@ -11,7 +11,7 @@
 			[cheshire.core :refer :all])	;; json-work
   (:gen-class))
 
-(def bot-token "***REMOVED***")
+(def bot-token "")
 (def bot-url (str "https://api.telegram.org/bot" bot-token "/"))
 (def my-url "https://tzapil.tk:80/")
 
